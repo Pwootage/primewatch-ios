@@ -142,6 +142,7 @@ class ViewController: UIViewController {
             self.connection = nil
           }
           self.connectionLock.unlock()
+          return
         }
       }
       if bytes.count != PrimeDataPacket.size {
