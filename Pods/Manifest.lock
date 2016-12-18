@@ -8,19 +8,22 @@ PODS:
     - RxCocoa (~> 3.0)
     - RxSwift (~> 3.0)
   - RxSwift (3.0.1)
+  - SwiftSocket (2.0.1)
 
 DEPENDENCIES:
   - Material (~> 2.4)
   - RxCocoa (~> 3.0)
   - RxDataSources (~> 1.0)
   - RxSwift (~> 3.0)
+  - SwiftSocket
 
 SPEC CHECKSUMS:
   Material: bdf4386e3600537077c2667764292f8dd581e541
   RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
   RxDataSources: 824693e84d00781d0a5e5cedc1ff95ce9250aacd
   RxSwift: af5680055c4ad04480189c52d28385b1029493a6
+  SwiftSocket: 2d814afdc97c89217982f86fd036c1874134a63f
 
-PODFILE CHECKSUM: eba0bb3b1d8198fcddc9522705940b64c5b36d04
+PODFILE CHECKSUM: 624c697a6090a6df955f732da9d3bfb096bff0f9
 
 COCOAPODS: 1.1.1
