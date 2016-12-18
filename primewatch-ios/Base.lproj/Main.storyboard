@@ -49,6 +49,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHB-wa-VlA">
+                                <rect key="frame" x="166" y="638.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -56,8 +62,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="qfh-YC-3L4" secondAttribute="trailing" constant="16" id="EX4-gT-l5k"/>
                             <constraint firstItem="B6m-pt-m68" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VYM-Pn-sdU"/>
                             <constraint firstItem="qfh-YC-3L4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="ZaF-TB-I7H"/>
+                            <constraint firstItem="oHB-wa-VlA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gKN-zP-G1R"/>
                             <constraint firstItem="B6m-pt-m68" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hvt-6g-jS9"/>
                             <constraint firstItem="qfh-YC-3L4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="laP-eV-USM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oHB-wa-VlA" secondAttribute="bottom" constant="8" id="riB-72-zMs"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="X8G-mE-KII" appends="YES" id="gb9-ub-DQH"/>
@@ -66,6 +74,7 @@
                     <connections>
                         <outlet property="ipField" destination="2M4-FU-Bwg" id="ilm-oc-ge1"/>
                         <outlet property="timeLabel" destination="B6m-pt-m68" id="xg3-e1-KEY"/>
+                        <outlet property="watchStatusLabel" destination="oHB-wa-VlA" id="RUk-bB-zgg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

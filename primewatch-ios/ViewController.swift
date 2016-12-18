@@ -11,10 +11,13 @@ import Material
 import RxSwift
 import RxCocoa
 import SwiftSocket
+import WatchKit
+import WatchConnectivity
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WCSessionDelegate {
   @IBOutlet weak var ipField: TextField!
   @IBOutlet weak var timeLabel: UILabel!
+  @IBOutlet weak var watchStatusLabel: UILabel!
 
   let userDefaults = UserDefaults.standard
   let ipKey = "wii.ip"
@@ -25,11 +28,29 @@ class ViewController: UIViewController {
   let ipVar = Variable<String?>(nil)
   let dataVar = Variable<PrimeDataPacket?>(nil)
   let disposeBag = DisposeBag()
+  var wcSession: WCSession? = nil
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     prepareUI()
+  }
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+
+    if WCSession.isSupported() && wcSession == nil {
+      wcSession = WCSession.default()
+      wcSession!.delegate = self
+    }
+    if wcSession != nil && wcSession!.activationState != .activated {
+      wcSession!.activate()
+      self.watchStatusLabel.text = "Watch reachable: \(self.wcSession?.isReachable ?? false)"
+    }
+  }
+
+  override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(animated)
   }
 
   private func prepareUI() {
@@ -80,6 +101,38 @@ class ViewController: UIViewController {
       .drive(timeLabel.rx.text)
       .addDisposableTo(disposeBag)
 
+    var lastSent = false
+    dataVar.asDriver().throttle(1).drive(onNext: { dataOpt in
+        var msg: [String: Any] = [:]
+        if let data = dataOpt {
+          var sec = data.timer.remainder(dividingBy: 60.0)
+          if sec < 0 {
+            sec += 60
+          }
+          var min = Int((data.timer / 60.0).remainder(dividingBy: 60.0))
+          if min < 0 {
+            min += 60
+          }
+          let hr = Int(data.timer / 60.0 / 60.0)
+          let time = "\(hr):\(minFormat.string(from: NSNumber(value: min))!):\(secondFormat.string(from: NSNumber(value: sec))!)"
+          msg["time"] = time
+        }
+
+        self.watchStatusLabel.text = "Watch reachable: \(self.wcSession?.isReachable ?? false)"
+        if self.wcSession?.isReachable ?? false && msg.count > 0 {
+          if !lastSent {
+            print("Sending again")
+            lastSent = true
+          }
+          self.wcSession?.sendMessage(msg, replyHandler: nil)
+        } else {
+          if lastSent {
+            print("Stopping sending")
+            lastSent = false
+          }
+        }
+      }).addDisposableTo(disposeBag)
+
     timeLabel.font = timeLabel.font.monospacedDigitFont
 
     if let ip = userDefaults.string(forKey: ipKey) {
@@ -87,7 +140,7 @@ class ViewController: UIViewController {
       ipVar.value = ip
     }
   }
-  
+
   @IBAction func giveUpFirstResponder() {
     view.endEditing(true)
   }
@@ -113,9 +166,20 @@ class ViewController: UIViewController {
       }
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    print("Watch session is active")
+  }
+
+  func sessionDidBecomeInactive(_ session: WCSession) {
+    print("Watch session is inactive")
+  }
+
+  func sessionDidDeactivate(_ session: WCSession) {
+    print("Watch session deactivated")
+  }
+
+  func sessionReachabilityDidChange(_ session: WCSession) {
+    print("Reachability: \(session.isReachable)")
   }
 
   private func mainNetworkLoop() {

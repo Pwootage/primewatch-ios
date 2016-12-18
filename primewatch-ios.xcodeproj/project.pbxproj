@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6232FCC11E072F4300FE6D0F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6232FCBF1E072F4300FE6D0F /* Interface.storyboard */; };
+		6232FCC31E072F4300FE6D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6232FCC21E072F4300FE6D0F /* Assets.xcassets */; };
+		6232FCCA1E072F4300FE6D0F /* primewatch-watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6232FCC91E072F4300FE6D0F /* primewatch-watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6232FCD11E072F4300FE6D0F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6232FCD01E072F4300FE6D0F /* InterfaceController.swift */; };
+		6232FCD31E072F4300FE6D0F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6232FCD21E072F4300FE6D0F /* ExtensionDelegate.swift */; };
+		6232FCD51E072F4300FE6D0F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6232FCD41E072F4300FE6D0F /* NotificationController.swift */; };
+		6232FCD71E072F4300FE6D0F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6232FCD61E072F4300FE6D0F /* ComplicationController.swift */; };
+		6232FCD91E072F4300FE6D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6232FCD81E072F4300FE6D0F /* Assets.xcassets */; };
+		6232FCDD1E072F4300FE6D0F /* primewatch-watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6232FCBD1E072F4300FE6D0F /* primewatch-watch.app */; };
 		62D74F911E07004E00C34CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D74F901E07004E00C34CD2 /* AppDelegate.swift */; };
 		62D74F931E07004E00C34CD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D74F921E07004E00C34CD2 /* ViewController.swift */; };
 		62D74F961E07004E00C34CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D74F941E07004E00C34CD2 /* Main.storyboard */; };
@@ -18,8 +27,62 @@
 		F05E990C2DFE301FCAC2DD88 /* Pods_primewatch_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BE03F57CA74E6C1A0CBF80 /* Pods_primewatch_ios.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6232FCCB1E072F4300FE6D0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62D74F851E07004E00C34CD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6232FCC81E072F4300FE6D0F;
+			remoteInfo = "primewatch-watch Extension";
+		};
+		6232FCDB1E072F4300FE6D0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62D74F851E07004E00C34CD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6232FCBC1E072F4300FE6D0F;
+			remoteInfo = "primewatch-watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6232FCE31E072F4300FE6D0F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6232FCCA1E072F4300FE6D0F /* primewatch-watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6232FCE51E072F4300FE6D0F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6232FCDD1E072F4300FE6D0F /* primewatch-watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1C73F98A160C8F1E1C246E8C /* Pods-primewatch-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-primewatch-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-primewatch-ios/Pods-primewatch-ios.release.xcconfig"; sourceTree = "<group>"; };
+		6232FCBD1E072F4300FE6D0F /* primewatch-watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "primewatch-watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6232FCC01E072F4300FE6D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6232FCC21E072F4300FE6D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6232FCC41E072F4300FE6D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6232FCC91E072F4300FE6D0F /* primewatch-watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "primewatch-watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6232FCCF1E072F4300FE6D0F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6232FCD01E072F4300FE6D0F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6232FCD21E072F4300FE6D0F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6232FCD41E072F4300FE6D0F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6232FCD61E072F4300FE6D0F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		6232FCD81E072F4300FE6D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6232FCDA1E072F4300FE6D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62D74F8D1E07004E00C34CD2 /* primewatch-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "primewatch-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D74F901E07004E00C34CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62D74F921E07004E00C34CD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +98,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6232FCC61E072F4300FE6D0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62D74F8A1E07004E00C34CD2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,10 +124,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6232FCBE1E072F4300FE6D0F /* primewatch-watch */ = {
+			isa = PBXGroup;
+			children = (
+				6232FCBF1E072F4300FE6D0F /* Interface.storyboard */,
+				6232FCC21E072F4300FE6D0F /* Assets.xcassets */,
+				6232FCC41E072F4300FE6D0F /* Info.plist */,
+			);
+			path = "primewatch-watch";
+			sourceTree = "<group>";
+		};
+		6232FCCD1E072F4300FE6D0F /* primewatch-watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6232FCD01E072F4300FE6D0F /* InterfaceController.swift */,
+				6232FCD21E072F4300FE6D0F /* ExtensionDelegate.swift */,
+				6232FCD41E072F4300FE6D0F /* NotificationController.swift */,
+				6232FCD61E072F4300FE6D0F /* ComplicationController.swift */,
+				6232FCD81E072F4300FE6D0F /* Assets.xcassets */,
+				6232FCDA1E072F4300FE6D0F /* Info.plist */,
+				6232FCCE1E072F4300FE6D0F /* Supporting Files */,
+			);
+			path = "primewatch-watch Extension";
+			sourceTree = "<group>";
+		};
+		6232FCCE1E072F4300FE6D0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6232FCCF1E072F4300FE6D0F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		62D74F841E07004E00C34CD2 = {
 			isa = PBXGroup;
 			children = (
 				62D74F8F1E07004E00C34CD2 /* primewatch-ios */,
+				6232FCBE1E072F4300FE6D0F /* primewatch-watch */,
+				6232FCCD1E072F4300FE6D0F /* primewatch-watch Extension */,
 				62D74F8E1E07004E00C34CD2 /* Products */,
 				7FDE2E091A1D775EF6ADFB3F /* Pods */,
 				0ED3C87DF2F1E962372FC41B /* Frameworks */,
@@ -68,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				62D74F8D1E07004E00C34CD2 /* primewatch-ios.app */,
+				6232FCBD1E072F4300FE6D0F /* primewatch-watch.app */,
+				6232FCC91E072F4300FE6D0F /* primewatch-watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +206,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6232FCBC1E072F4300FE6D0F /* primewatch-watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6232FCE41E072F4300FE6D0F /* Build configuration list for PBXNativeTarget "primewatch-watch" */;
+			buildPhases = (
+				6232FCBB1E072F4300FE6D0F /* Resources */,
+				6232FCE31E072F4300FE6D0F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6232FCCC1E072F4300FE6D0F /* PBXTargetDependency */,
+			);
+			name = "primewatch-watch";
+			productName = "primewatch-watch";
+			productReference = 6232FCBD1E072F4300FE6D0F /* primewatch-watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6232FCC81E072F4300FE6D0F /* primewatch-watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6232FCE21E072F4300FE6D0F /* Build configuration list for PBXNativeTarget "primewatch-watch Extension" */;
+			buildPhases = (
+				6232FCC51E072F4300FE6D0F /* Sources */,
+				6232FCC61E072F4300FE6D0F /* Frameworks */,
+				6232FCC71E072F4300FE6D0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "primewatch-watch Extension";
+			productName = "primewatch-watch Extension";
+			productReference = 6232FCC91E072F4300FE6D0F /* primewatch-watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		62D74F8C1E07004E00C34CD2 /* primewatch-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62D74F9F1E07004E00C34CD2 /* Build configuration list for PBXNativeTarget "primewatch-ios" */;
@@ -110,10 +250,12 @@
 				62D74F8B1E07004E00C34CD2 /* Resources */,
 				EE9A377596B27CE62FAE60D2 /* [CP] Embed Pods Frameworks */,
 				74A41DF0EDB2E286C2BAA401 /* [CP] Copy Pods Resources */,
+				6232FCE51E072F4300FE6D0F /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6232FCDC1E072F4300FE6D0F /* PBXTargetDependency */,
 			);
 			name = "primewatch-ios";
 			productName = "primewatch-ios";
@@ -130,6 +272,16 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Christopher Freestone";
 				TargetAttributes = {
+					6232FCBC1E072F4300FE6D0F = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 44N9FY7954;
+						ProvisioningStyle = Automatic;
+					};
+					6232FCC81E072F4300FE6D0F = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 44N9FY7954;
+						ProvisioningStyle = Automatic;
+					};
 					62D74F8C1E07004E00C34CD2 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 44N9FY7954;
@@ -151,11 +303,30 @@
 			projectRoot = "";
 			targets = (
 				62D74F8C1E07004E00C34CD2 /* primewatch-ios */,
+				6232FCBC1E072F4300FE6D0F /* primewatch-watch */,
+				6232FCC81E072F4300FE6D0F /* primewatch-watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6232FCBB1E072F4300FE6D0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6232FCC31E072F4300FE6D0F /* Assets.xcassets in Resources */,
+				6232FCC11E072F4300FE6D0F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6232FCC71E072F4300FE6D0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6232FCD91E072F4300FE6D0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62D74F8B1E07004E00C34CD2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,6 +388,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6232FCC51E072F4300FE6D0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6232FCD51E072F4300FE6D0F /* NotificationController.swift in Sources */,
+				6232FCD71E072F4300FE6D0F /* ComplicationController.swift in Sources */,
+				6232FCD31E072F4300FE6D0F /* ExtensionDelegate.swift in Sources */,
+				6232FCD11E072F4300FE6D0F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62D74F891E07004E00C34CD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,7 +413,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6232FCCC1E072F4300FE6D0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6232FCC81E072F4300FE6D0F /* primewatch-watch Extension */;
+			targetProxy = 6232FCCB1E072F4300FE6D0F /* PBXContainerItemProxy */;
+		};
+		6232FCDC1E072F4300FE6D0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6232FCBC1E072F4300FE6D0F /* primewatch-watch */;
+			targetProxy = 6232FCDB1E072F4300FE6D0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		6232FCBF1E072F4300FE6D0F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6232FCC01E072F4300FE6D0F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		62D74F941E07004E00C34CD2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -251,6 +454,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6232FCDE1E072F4300FE6D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44N9FY7954;
+				IBSC_MODULE = primewatch_watch_Extension;
+				INFOPLIST_FILE = "primewatch-watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwootage.primewatch-ios.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		6232FCDF1E072F4300FE6D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44N9FY7954;
+				IBSC_MODULE = primewatch_watch_Extension;
+				INFOPLIST_FILE = "primewatch-watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwootage.primewatch-ios.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		6232FCE01E072F4300FE6D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 44N9FY7954;
+				INFOPLIST_FILE = "primewatch-watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwootage.primewatch-ios.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		6232FCE11E072F4300FE6D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 44N9FY7954;
+				INFOPLIST_FILE = "primewatch-watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwootage.primewatch-ios.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 		62D74F9D1E07004E00C34CD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -377,6 +650,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6232FCE21E072F4300FE6D0F /* Build configuration list for PBXNativeTarget "primewatch-watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6232FCE01E072F4300FE6D0F /* Debug */,
+				6232FCE11E072F4300FE6D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6232FCE41E072F4300FE6D0F /* Build configuration list for PBXNativeTarget "primewatch-watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6232FCDE1E072F4300FE6D0F /* Debug */,
+				6232FCDF1E072F4300FE6D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		62D74F881E07004E00C34CD2 /* Build configuration list for PBXProject "primewatch-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
