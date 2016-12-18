@@ -22,26 +22,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2M4-FU-Bwg" customClass="TextField" customModule="Material">
-                                <rect key="frame" x="32" y="28" width="311" height="17"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Wii IP"/>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfh-YC-3L4">
+                                <rect key="frame" x="32" y="52" width="311" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2M4-FU-Bwg" customClass="TextField" customModule="Material">
+                                        <rect key="frame" x="0.0" y="0.0" width="239" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Wii IP"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xH-M7-Crx" customClass="FlatButton" customModule="Material">
+                                        <rect key="frame" x="239" y="0.0" width="72" height="30"/>
+                                        <state key="normal" title="CONNECT"/>
+                                        <connections>
+                                            <action selector="connect" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAl-2a-upe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00:00.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6m-pt-m68">
+                                <rect key="frame" x="95.5" y="314.5" width="183.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="2M4-FU-Bwg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="ZZC-6T-IvY"/>
-                            <constraint firstItem="2M4-FU-Bwg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="egK-cF-SvR"/>
-                            <constraint firstItem="2M4-FU-Bwg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="fh9-h1-eg8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2M4-FU-Bwg" secondAttribute="trailing" constant="16" id="pgF-d3-7CG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qfh-YC-3L4" secondAttribute="trailing" constant="16" id="EX4-gT-l5k"/>
+                            <constraint firstItem="B6m-pt-m68" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VYM-Pn-sdU"/>
+                            <constraint firstItem="qfh-YC-3L4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="ZaF-TB-I7H"/>
+                            <constraint firstItem="B6m-pt-m68" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hvt-6g-jS9"/>
+                            <constraint firstItem="qfh-YC-3L4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="laP-eV-USM"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="X8G-mE-KII" appends="YES" id="gb9-ub-DQH"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="ipField" destination="2M4-FU-Bwg" id="ilm-oc-ge1"/>
+                        <outlet property="timeLabel" destination="B6m-pt-m68" id="xg3-e1-KEY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="X8G-mE-KII">
+                    <connections>
+                        <action selector="giveUpFirstResponder" destination="BYZ-38-t0r" id="R9a-uf-UNR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>

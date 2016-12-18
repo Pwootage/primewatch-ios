@@ -12,6 +12,9 @@
 		62D74F961E07004E00C34CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D74F941E07004E00C34CD2 /* Main.storyboard */; };
 		62D74F981E07004E00C34CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D74F971E07004E00C34CD2 /* Assets.xcassets */; };
 		62D74F9B1E07004E00C34CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D74F991E07004E00C34CD2 /* LaunchScreen.storyboard */; };
+		CD45726AC81CA7F4B8D963D0 /* PrimeDataPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD457A4C115FA56D8220B195 /* PrimeDataPacket.swift */; };
+		CD45771F670B2CD5536E517F /* BinaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4573DBBF81FF68A36EEFA8 /* BinaryParser.swift */; };
+		CD4579A69E7902CF85B56632 /* UIFont+MonospacedDigitFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD457B213A2E0D9CDF588673 /* UIFont+MonospacedDigitFont.swift */; };
 		F05E990C2DFE301FCAC2DD88 /* Pods_primewatch_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BE03F57CA74E6C1A0CBF80 /* Pods_primewatch_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,9 @@
 		62D74F9C1E07004E00C34CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85BE03F57CA74E6C1A0CBF80 /* Pods_primewatch_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_primewatch_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC4531CCC0A5B9C87171E06 /* Pods-primewatch-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-primewatch-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-primewatch-ios/Pods-primewatch-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		CD4573DBBF81FF68A36EEFA8 /* BinaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryParser.swift; sourceTree = "<group>"; };
+		CD457A4C115FA56D8220B195 /* PrimeDataPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeDataPacket.swift; sourceTree = "<group>"; };
+		CD457B213A2E0D9CDF588673 /* UIFont+MonospacedDigitFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+MonospacedDigitFont.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 				62D74F971E07004E00C34CD2 /* Assets.xcassets */,
 				62D74F991E07004E00C34CD2 /* LaunchScreen.storyboard */,
 				62D74F9C1E07004E00C34CD2 /* Info.plist */,
+				CD457A4C115FA56D8220B195 /* PrimeDataPacket.swift */,
+				CD4573DBBF81FF68A36EEFA8 /* BinaryParser.swift */,
+				CD457B213A2E0D9CDF588673 /* UIFont+MonospacedDigitFont.swift */,
 			);
 			path = "primewatch-ios";
 			sourceTree = "<group>";
@@ -214,6 +223,9 @@
 			files = (
 				62D74F931E07004E00C34CD2 /* ViewController.swift in Sources */,
 				62D74F911E07004E00C34CD2 /* AppDelegate.swift in Sources */,
+				CD45726AC81CA7F4B8D963D0 /* PrimeDataPacket.swift in Sources */,
+				CD45771F670B2CD5536E517F /* BinaryParser.swift in Sources */,
+				CD4579A69E7902CF85B56632 /* UIFont+MonospacedDigitFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 44N9FY7954;
 				INFOPLIST_FILE = "primewatch-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pwootage.primewatch-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 44N9FY7954;
 				INFOPLIST_FILE = "primewatch-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pwootage.primewatch-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +393,7 @@
 				62D74FA11E07004E00C34CD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
