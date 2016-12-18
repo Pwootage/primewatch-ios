@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62D74F911E07004E00C34CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D74F901E07004E00C34CD2 /* AppDelegate.swift */; };
+		62D74F931E07004E00C34CD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D74F921E07004E00C34CD2 /* ViewController.swift */; };
+		62D74F961E07004E00C34CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D74F941E07004E00C34CD2 /* Main.storyboard */; };
+		62D74F981E07004E00C34CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D74F971E07004E00C34CD2 /* Assets.xcassets */; };
+		62D74F9B1E07004E00C34CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D74F991E07004E00C34CD2 /* LaunchScreen.storyboard */; };
+		F05E990C2DFE301FCAC2DD88 /* Pods_primewatch_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BE03F57CA74E6C1A0CBF80 /* Pods_primewatch_ios.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C73F98A160C8F1E1C246E8C /* Pods-primewatch-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-primewatch-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-primewatch-ios/Pods-primewatch-ios.release.xcconfig"; sourceTree = "<group>"; };
+		62D74F8D1E07004E00C34CD2 /* primewatch-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "primewatch-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D74F901E07004E00C34CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62D74F921E07004E00C34CD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62D74F951E07004E00C34CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62D74F971E07004E00C34CD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62D74F9A1E07004E00C34CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62D74F9C1E07004E00C34CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85BE03F57CA74E6C1A0CBF80 /* Pods_primewatch_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_primewatch_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FC4531CCC0A5B9C87171E06 /* Pods-primewatch-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-primewatch-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-primewatch-ios/Pods-primewatch-ios.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62D74F8A1E07004E00C34CD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F05E990C2DFE301FCAC2DD88 /* Pods_primewatch_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ED3C87DF2F1E962372FC41B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85BE03F57CA74E6C1A0CBF80 /* Pods_primewatch_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62D74F841E07004E00C34CD2 = {
+			isa = PBXGroup;
+			children = (
+				62D74F8F1E07004E00C34CD2 /* primewatch-ios */,
+				62D74F8E1E07004E00C34CD2 /* Products */,
+				7FDE2E091A1D775EF6ADFB3F /* Pods */,
+				0ED3C87DF2F1E962372FC41B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62D74F8E1E07004E00C34CD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62D74F8D1E07004E00C34CD2 /* primewatch-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62D74F8F1E07004E00C34CD2 /* primewatch-ios */ = {
+			isa = PBXGroup;
+			children = (
+				62D74F901E07004E00C34CD2 /* AppDelegate.swift */,
+				62D74F921E07004E00C34CD2 /* ViewController.swift */,
+				62D74F941E07004E00C34CD2 /* Main.storyboard */,
+				62D74F971E07004E00C34CD2 /* Assets.xcassets */,
+				62D74F991E07004E00C34CD2 /* LaunchScreen.storyboard */,
+				62D74F9C1E07004E00C34CD2 /* Info.plist */,
+			);
+			path = "primewatch-ios";
+			sourceTree = "<group>";
+		};
+		7FDE2E091A1D775EF6ADFB3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FC4531CCC0A5B9C87171E06 /* Pods-primewatch-ios.debug.xcconfig */,
+				1C73F98A160C8F1E1C246E8C /* Pods-primewatch-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62D74F8C1E07004E00C34CD2 /* primewatch-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62D74F9F1E07004E00C34CD2 /* Build configuration list for PBXNativeTarget "primewatch-ios" */;
+			buildPhases = (
+				C5F04F7E66C22AFF45F6CE42 /* [CP] Check Pods Manifest.lock */,
+				62D74F891E07004E00C34CD2 /* Sources */,
+				62D74F8A1E07004E00C34CD2 /* Frameworks */,
+				62D74F8B1E07004E00C34CD2 /* Resources */,
+				EE9A377596B27CE62FAE60D2 /* [CP] Embed Pods Frameworks */,
+				74A41DF0EDB2E286C2BAA401 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "primewatch-ios";
+			productName = "primewatch-ios";
+			productReference = 62D74F8D1E07004E00C34CD2 /* primewatch-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62D74F851E07004E00C34CD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Christopher Freestone";
+				TargetAttributes = {
+					62D74F8C1E07004E00C34CD2 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 44N9FY7954;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 62D74F881E07004E00C34CD2 /* Build configuration list for PBXProject "primewatch-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62D74F841E07004E00C34CD2;
+			productRefGroup = 62D74F8E1E07004E00C34CD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62D74F8C1E07004E00C34CD2 /* primewatch-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62D74F8B1E07004E00C34CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D74F9B1E07004E00C34CD2 /* LaunchScreen.storyboard in Resources */,
+				62D74F981E07004E00C34CD2 /* Assets.xcassets in Resources */,
+				62D74F961E07004E00C34CD2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74A41DF0EDB2E286C2BAA401 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-primewatch-ios/Pods-primewatch-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F04F7E66C22AFF45F6CE42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE9A377596B27CE62FAE60D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-primewatch-ios/Pods-primewatch-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62D74F891E07004E00C34CD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D74F931E07004E00C34CD2 /* ViewController.swift in Sources */,
+				62D74F911E07004E00C34CD2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		62D74F941E07004E00C34CD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62D74F951E07004E00C34CD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62D74F991E07004E00C34CD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62D74F9A1E07004E00C34CD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62D74F9D1E07004E00C34CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62D74F9E1E07004E00C34CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62D74FA01E07004E00C34CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FC4531CCC0A5B9C87171E06 /* Pods-primewatch-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44N9FY7954;
+				INFOPLIST_FILE = "primewatch-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwootage.primewatch-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		62D74FA11E07004E00C34CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C73F98A160C8F1E1C246E8C /* Pods-primewatch-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44N9FY7954;
+				INFOPLIST_FILE = "primewatch-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwootage.primewatch-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62D74F881E07004E00C34CD2 /* Build configuration list for PBXProject "primewatch-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62D74F9D1E07004E00C34CD2 /* Debug */,
+				62D74F9E1E07004E00C34CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62D74F9F1E07004E00C34CD2 /* Build configuration list for PBXNativeTarget "primewatch-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62D74FA01E07004E00C34CD2 /* Debug */,
+				62D74FA11E07004E00C34CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62D74F851E07004E00C34CD2 /* Project object */;
+}
